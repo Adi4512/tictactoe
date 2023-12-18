@@ -123,7 +123,7 @@ export default function Board() {
   <div className='tic-design'>
    <h2 className='tic-1'>tic.</h2> 
     <h2 className='tic-2' style={{color:"#DCBF3F",marginTop:"-80px"}}>tac.</h2>
-    <h2 className='tic-3' style={{marginTop:"80px"}}>toe.</h2>
+    <h2 className='tic-3' style={{marginTop:"-80px"}}>toe.</h2>
   </div>
   </div>
   </>
