@@ -1,0 +1,146 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    
+   
+}
+
+body{
+    background-color: #5A1E76;
+    font-family: 'fredoka',sans-serif;
+    text-align: center;
+}
+/* 
+.board-row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:18vmin;
+   width: 18vmin;
+} */
+
+.square{
+   border:2px solid #2B0040;
+   height: 18vmin;
+   width: 18vmin;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #5A1E76;
+
+}
+
+.board-container{
+    background-color:#2B0040;
+    margin-top: 50px;
+    margin-left: 535px;
+    /* height:70vh; */
+    /* width: 80vh; */
+    height: 550px;
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color:  #ffd30c;
+    
+}
+
+.boxes{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+h4{
+    font-size: 30px;
+    font-family: 'fredoka',sans-serif;
+    color: #72CFF9;
+}
+span{
+    color: #DCBF3F;
+}
+
+.but--reset{
+    border-radius: 4px;
+    
+    font-size:30px;
+    width: 100px ;
+    height:45px;
+    color:#3d91ff;
+    background-color: #5A1E76;
+    margin-top: 20px;
+
+}
+
+.tic-design {
+    position: absolute;
+    bottom: 3px; /* Adjust this value to position it vertically */
+    left:-2px; /* Adjust this value to position it horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'fredoka', sans-serif;
+    color: #72CFF9;
+    
+  }
+  
+  .tic-design h2 {
+    margin: 0;
+    font-size: 150px;
+  }
+
+
+  /* Your existing CSS */
+
+/* ... */
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    body {
+      padding: 10px; /* Adjust body padding for smaller screens */
+    }
+  
+    .board-container {
+      margin: 20px auto; /* Center the board on smaller screens */
+      margin-left: auto;
+      margin-right: auto;
+      height: auto; /* Allow the height to adjust */
+      width: 80vw; /* Adjust the board width for smaller screens */
+      font-size: 40px; /* Adjust font size for smaller screens */
+    }
+  
+    .square {
+      height: 12vw; /* Adjust square height for smaller screens */
+      width: 12vw; /* Adjust square width for smaller screens */
+      font-size: 2em; /* Adjust font size for smaller screens */
+    }
+  
+    .tic-design {
+      position: absolute;
+      bottom: 20px; /* Adjust position for smaller screens */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Center horizontally */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'fredoka', sans-serif;
+      color: #72CFF9;
+    }
+  
+    .tic-design h2 {
+      margin: 0;
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  /* Your remaining CSS */
+  
